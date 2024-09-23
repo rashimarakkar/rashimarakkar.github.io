@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rashid TP - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 50px 0;
+            text-align: center;
+            position: relative;
+        }
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            z-index: 2;
+            position: relative;
+        }
+        header p {
+            z-index: 2;
+            position: relative;
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+        section {
+            background-color: #fff;
+            padding: 40px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 0 auto;
+            display: block;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        h2 {
+            color: #007BFF;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+            text-align: center;
+        }
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .skill {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 20px;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+        }
+        .skill:hover {
+            background-color: #0056b3;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #007BFF;
+            color: #fff;
+            margin-top: 20px;
+        }
+        a {
+            color: #007BFF;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        a:hover {
+            color: #0056b3;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            header p {
+                font-size: 1rem;
+            }
+            section {
+                padding: 20px;
+            }
+            h2 {
+                font-size: 1.5rem;
+            }
+            .skill {
+                font-size: 0.9rem;
+                padding: 8px 16px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                padding: 30px 0;
+            }
+            header h1 {
+                font-size: 1.5rem;
+            }
+            header p {
+                font-size: 0.9rem;
+            }
+            .profile-img {
+                width: 120px;
+                height: 120px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Rashid TP</h1>
+        <p>Full Stack Developer | Co-founder & CEO at CodeAppan LLP</p>
+    </header>
+
+    <div class="container">
+
+        <section id="about">
+            <img src="your-photo.jpg" alt="Rashid TP" class="profile-img">
+            <h2>About Me</h2>
+            <p>Hello! I'm Rashid TP, a passionate full-stack developer with extensive experience in building robust and scalable web applications. Currently, I am the co-founder and CEO of CodeAppan LLP, where we work on innovative tech solutions to solve real-world problems.</p>
+        </section>
+
+        <section id="experience">
+            <h2>Experience</h2>
+            <ul>
+                <li><strong>Co-founder & CEO</strong> at CodeAppan LLP - <em>2021-Present</em></li>
+                <li><strong>Full Stack Developer</strong> at XYZ Company - <em>2018-2021</em></li>
+                <li><strong>Software Engineer</strong> at ABC Corp - <em>2015-2018</em></li>
+            </ul>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills">
+                <div class="skill">JavaScript</div>
+                <div class="skill">Node.js</div>
+                <div class="skill">Angular</div>
+                <div class="skill">Express.js</div>
+                <div class="skill">MongoDB</div>
+                <div class="skill">NestJS</div>
+                <div class="skill">AWS</div>
+                <div class="skill">Docker</div>
+                <div class="skill">HTML/CSS</div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>Email: <a href="mailto:rashid@codeappan.com">rashid@codeappan.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/rashidtp" target="_blank">linkedin.com/in/rashidtp</a></p>
+            <p>GitHub: <a href="https://github.com/rashidtp" target="_blank">github.com/rashidtp</a></p>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Rashid TP. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
