@@ -66,6 +66,7 @@
                 repeating-linear-gradient(-45deg, rgba(255, 255, 255, 0.1) 0, rgba(255, 255, 255, 0.1) 1px, transparent 1px, transparent 50px);
         }
 
+
         header h1 {
             margin: 0;
             font-size: 2.5rem;
@@ -155,6 +156,39 @@
         a:hover {
             color: var(--link-hover-color);
         }
+
+        #contact {
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .contact-links {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .contact-links p {
+        margin: 0;
+    }
+
+    .contact-links a {
+        color: var(--link-color);
+        text-decoration: none;
+        font-size: 1.2rem;
+        display: flex;
+        align-items: center;
+    }
+
+    .contact-links a i {
+        margin-right: 8px;
+        font-size: 1.2rem;
+    }
+
+    .contact-links a:hover {
+        color: var(--link-hover-color);
+    }
 
         /* Responsive Styles */
         @media (max-width: 768px) {
@@ -279,18 +313,21 @@
                 <div class="skill">Git</div>
             </div>
         </section>
-
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <p><a href="mailto:rashimarakkar@gmail.com"><i class="fas fa-envelope"></i> Email</a></p>
-            <p><a href="https://www.linkedin.com/in/rashid-tp-83935282/" target="_blank"><i class="fab fa-linkedin"></i>
-                     LinkedIn</a></p>
-            <p><a href="https://www.instagram.com/rashimarakkar/" target="_blank"><i class="fab fa-instagram"></i>
-                     Instagram</a></p>
-            <p><a href="https://x.com/Rashimarakkar" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></p>
-            <p><a href="https://www.facebook.com/rashimarakkar" target="_blank"><i class="fab fab fa-facebook"></i></fab> Facebook</a></p>
-
-            </section>
+<section id="contact">
+    <h2>Contact Me</h2>
+    <div class="contact-links">
+        <p><a href="mailto:rashimarakkar@gmail.com"><i class="fas fa-envelope"></i> Email</a></p>
+        <p><a href="https://www.linkedin.com/in/rashid-tp-83935282/" target="_blank"><i class="fab fa-linkedin"></i>
+                LinkedIn</a></p>
+        <p><a href="https://www.instagram.com/rashimarakkar/" target="_blank"><i class="fab fa-instagram"></i>
+                Instagram</a></p>
+        <p><a href="https://x.com/Rashimarakkar" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></p>
+        <p><a href="https://www.facebook.com/rashimarakkar" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
+        </p>
+        <p><a href="https://github.com/rashimarakkar" target="_blank"><i class="fab fa-github"></i> Github</a></p>
+        <p><a href="https://gitlab.com/rashimarakkar" target="_blank"><i class="fab fa-gitlab"></i> Gitlab</a></p>
+    </div>
+</section>
 
             </div>
                 <footer>
