@@ -11,13 +11,30 @@
         href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap"
         rel="stylesheet">
     <style>
+        :root {
+            --bg-color: #121212;
+            --text-color: #e0e0e0;
+            --primary-color: #bb86fc;
+            --secondary-color: #3700b3;
+            --container-bg: #1e1e1e;
+            --card-bg: #1f1f1f;
+            --link-color: #bb86fc;
+            --link-hover-color: #3700b3;
+        }
+
         body {
             font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
+            background-color: var(--bg-color);
+            color: var(--text-color);
             line-height: 1.6;
+            background-color: var(--bg-color);
+            background-image:
+                repeating-linear-gradient(45deg, rgba(255, 255, 255, 0.1) 0, rgba(255, 255, 255, 0.1) 1px, transparent 1px, transparent 50px),
+                repeating-linear-gradient(-45deg, rgba(255, 255, 255, 0.1) 0, rgba(255, 255, 255, 0.1) 1px, transparent 1px, transparent 50px);
+            background-size: 50px 50px;
+            /* Size of the pattern */
         }
 
         .container {
@@ -27,7 +44,7 @@
         }
 
         header {
-            background-color: #007BFF;
+            background-color: var(--primary-color);
             color: #fff;
             padding: 50px 0;
             text-align: center;
@@ -60,10 +77,10 @@
         }
 
         section {
-            background-color: #fff;
+            background-color: var(--card-bg);
             padding: 40px;
             margin-bottom: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
             border-radius: 10px;
         }
 
@@ -73,11 +90,11 @@
             border-radius: 50%;
             margin: 0 auto;
             display: block;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
         }
 
         h2 {
-            color: #007BFF;
+            color: var(--primary-color);
             margin-bottom: 20px;
             font-size: 1.8rem;
             text-align: center;
@@ -90,7 +107,7 @@
         }
 
         .skill {
-            background-color: #007BFF;
+            background-color: var(--primary-color);
             color: #fff;
             padding: 10px 20px;
             margin: 5px;
@@ -100,25 +117,25 @@
         }
 
         .skill:hover {
-            background-color: #0056b3;
+            background-color: var(--secondary-color);
         }
 
         footer {
             text-align: center;
             padding: 20px 0;
-            background-color: #007BFF;
+            background-color: var(--primary-color);
             color: #fff;
             margin-top: 20px;
         }
 
         a {
-            color: #007BFF;
+            color: var(--link-color);
             text-decoration: none;
             transition: color 0.3s ease;
         }
 
         a:hover {
-            color: #0056b3;
+            color: var(--link-hover-color);
         }
 
         /* Responsive Styles */
@@ -170,8 +187,8 @@
 
     <header>
         <h1>Rashid TP</h1>
-        <p>Co-Founder & CEO at Codeappan | Entrepreneur |Software Engineer | MongoDB | Express | Angular | Nodejs |
-            NestJs | Typescript</p>
+        <p>Co-Founder & CEO at Codeappan | Entrepreneur | Software Engineer | MongoDB | Express | Angular | Node.js |
+            NestJs | TypeScript</p>
     </header>
 
     <div class="container">
@@ -183,17 +200,16 @@
                 success in the global software development landscape. Specializing in JavaScript, Node.js, Angular, and
                 MongoDB, I have built and scaled robust applications across diverse industries.</p>
 
-            <p> I take pride in maintaining strong relationships with clients, staying in touch and enthusiastically
+            <p>I take pride in maintaining strong relationships with clients, staying in touch and enthusiastically
                 understanding their unique needs to deliver the best solutions. I thrive in dynamic environments and
                 enjoy solving complex challenges.</p>
 
-            <p>I speak English, Hindi and Malayalam Languages. I regularly pursue further education and aim for
-                continuous development. In the tech industry, it's essential to stay on top of things to keep up with
-                the latest trends and technologies.</p>
+            <p>I speak English, Hindi, and Malayalam. I regularly pursue further education and aim for continuous
+                development. In the tech industry, it's essential to stay on top of things to keep up with the latest
+                trends and technologies.</p>
 
             <p>Let’s connect to explore opportunities and collaborate on exciting projects that shape the future of
                 tech!</p>
-            </p>
         </section>
 
         <section id="experience">
@@ -202,11 +218,10 @@
                 <li><strong>Co-founder & CEO</strong> at CodeAppan LLP - <em>2021 - Present</em></li>
                 <li><strong>Senior Software Engineer</strong> at THINKIVATE LEARNING PVT LTD - <em>2020 - 2021</em></li>
                 <li><strong>Senior Software Engineer</strong> at Blisway Technologies - <em>2019 - 2020</em></li>
-                <li><strong>Senior Customer Service Executive</strong> at Lifecare Hospital Musaffah -
-                    <em>2016-2019</em>
-                </li>
-                <li><strong>Software Engineer</strong> at Deline Technologies Pvt.Ltd - <em>2014 - 2016</em></li>
-                <li><strong>Junior Software Engineer</strong> at Gulf It innovations - <em>2013 - 2014</em></li>
+                <li><strong>Senior Customer Service Executive</strong> at Lifecare Hospital Musaffah - <em>2016 -
+                        2019</em></li>
+                <li><strong>Software Engineer</strong> at Deline Technologies Pvt. Ltd - <em>2014 - 2016</em></li>
+                <li><strong>Junior Software Engineer</strong> at Gulf IT Innovations - <em>2013 - 2014</em></li>
             </ul>
         </section>
 
@@ -215,8 +230,8 @@
             <ul>
                 <li><strong>Master of Computer Application (MCA)</strong> - National Institute of Electronics &
                     Information Technology (NIELIT), Calicut, Kerala, India</li>
-                <li><strong>Bachelor of Computer Application (BCA)</strong> - Bishop Heber College, Trichy, Tamilnadu,
-                    India </li>
+                <li><strong>Bachelor of Computer Application (BCA)</strong> - Bishop Heber College, Trichy, Tamil Nadu,
+                    India</li>
             </ul>
         </section>
 
@@ -228,41 +243,19 @@
                 <div class="skill">Angular</div>
                 <div class="skill">Node.js</div>
                 <div class="skill">JavaScript</div>
-                <div class="skill">Typescript</div>
-                <div class="skill">Typescript</div>
-                <div class="skill">Wordpress</div>
+                <div class="skill">TypeScript</div>
+                <div class="skill">WordPress</div>
                 <div class="skill">NestJS</div>
                 <div class="skill">Postman</div>
                 <div class="skill">Git</div>
             </div>
         </section>
 
-
-
         <section id="contact">
             <h2>Contact Me</h2>
-            <p><a href="mailto:rashimarakkar@gmail.com"><i class="fas fa-envelope"></i>
-                    Email</a></p>
+            <p><a href="mailto:rashimarakkar@gmail.com"><i class="fas fa-envelope"></i> Email</a></p>
             <p><a href="https://www.linkedin.com/in/rashid-tp-83935282/" target="_blank"><i class="fab fa-linkedin"></i>
                     LinkedIn</a></p>
             <p><a href="https://www.instagram.com/rashimarakkar/" target="_blank"><i class="fab fa-instagram"></i>
                     Instagram</a></p>
-            <p><a href="https://x.com/Rashimarakkar" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
-            </p>
-            <p><a href="https://www.facebook.com/rashimarakkar" target="_blank"><i class="fab fa-facebook"></i>
-                    Facebook</a></p>
-            <p><a href="https://github.com/rashimarakkar" target="_blank"><i class="fab fa-github"></i>
-                    Github</a></p>
-        </section>
-
-
-
-    </div>
-
-    <footer>
-        <p>&copy; 2024 Rashid TP. All Rights Reserved.</p>
-    </footer>
-
-</body>
-
-</html>
+            <p><a href="https://x.com/Rashimarakkar" target="_blank"><i class="fab fa-twitter"></i> Twitter</
