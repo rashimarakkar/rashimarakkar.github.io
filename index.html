@@ -44,7 +44,7 @@
         }
 
         header {
-            background-color: var(--primary-color);
+            background-color: var(--bg-color);
             color: #fff;
             padding: 50px 0;
             text-align: center;
@@ -60,6 +60,10 @@
             bottom: 0;
             background: rgba(0, 0, 0, 0.5);
             z-index: 1;
+            background-size: 50px 50px;
+            background-image:
+                repeating-linear-gradient(45deg, rgba(255, 255, 255, 0.1) 0, rgba(255, 255, 255, 0.1) 1px, transparent 1px, transparent 50px),
+                repeating-linear-gradient(-45deg, rgba(255, 255, 255, 0.1) 0, rgba(255, 255, 255, 0.1) 1px, transparent 1px, transparent 50px);
         }
 
         header h1 {
